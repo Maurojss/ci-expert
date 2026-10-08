@@ -17,12 +17,15 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído
 - [x] Relatório de estudo: AES (FIPS-197, revisão) e SPI (modos CPOL/CPHA)
 - [x] Backlog inicial (este arquivo)
 - [x] `make sim` compilando e passando com VCS (PASS no testbench do exemplo)
-- [x] Rodar `make lint` e confirmar a ferramenta de lint com o instrutor
-- [ ] Mover o conteúdo de `aes_spi/` para a raiz do repositório
-- [ ] Validar `make sim` em clone limpo (git clone em pasta nova + `source /Tools/synopsys-scripts/snps.sh` + `make sim`)
-- [ ] Commit, push e tag `w01-env-v1.0`
-- [ ] Confirmar com o instrutor: PDK e especificação funcional detalhada
-- [ ] Registrar no relatório da semana o diagrama top-level e as dúvidas de arquitetura
+- [x] `make lint` rodando sem avisos (VCS, `+lint=all`)
+- [x] Estrutura achatada (Makefile em `ci-expert-aes-spi/`)
+- [x] Commit e push na branch `hands-on`
+- [x] Remover a pasta `classes/` da branch
+- [x] Atualizar o README com o setup real (branch, subpasta, `source /Tools/synopsys-scripts/snps.sh`)
+- [x] Registrar no relatório da semana o diagrama top-level e as dúvidas de arquitetura
+- [x] Validar `make sim` em clone limpo
+- [x] Tag `w01-setup-v1.0` (criar só depois do clone limpo passar)
+- [ ] Confirmar com o instrutor: ferramenta de lint, PDK e especificação funcional detalhada
 
 ### Semana 2 — Arquitetura e microarquitetura
 - [ ] Diagrama de blocos (RESET, PLL mockado, SPI, AES, memória/data system, banco de registradores se existir, controlador de energia)

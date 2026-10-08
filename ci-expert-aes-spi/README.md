@@ -4,15 +4,28 @@ Projeto hands-on da trilha RTL Design — CIExpert.
 
 ## Setup rápido
 
+No servidor, carregue as ferramentas Synopsys e rode a simulação:
+
 ```bash
-git clone <url-do-repo>
-cd <repo>
+git clone -b hands-on https://github.com/Maurojss/ci-expert.git
+cd ci-expert/ci-expert-aes-spi
+source /Tools/synopsys-scripts/snps.sh
 make sim
 ```
 
-Isso compila e simula o exemplo mínimo (`rtl/example/counter.sv`), que existe
+O resultado esperado é `PASS: todos os checks do exemplo minimo passaram`.
+A simulação compila e roda o exemplo mínimo (`rtl/example/counter.sv`), que existe
 apenas para validar o fluxo do repositório nesta fase inicial. O IP real
 (AES + SPI) começa a partir da Semana 3.
+
+Alvos disponíveis:
+
+| Comando | O que faz |
+| --- | --- |
+| `make sim` | Compila e simula o exemplo mínimo (VCS) |
+| `make lint` | Roda o lint do VCS (`+lint=all`) no exemplo mínimo |
+| `make clean` | Remove os artefatos gerados (`build/`) |
+| `make help` | Lista os alvos |
 
 ## Estrutura
 
@@ -33,11 +46,11 @@ apenas para validar o fluxo do repositório nesta fase inicial. O IP real
 ## Requisitos de ferramenta
 
 - Synopsys VCS (simulação)
-- Lint (ferramenta a definir conforme disponibilizado pelo instrutor)
+- Lint do VCS (`+lint=all`); ferramenta de lint definitiva a confirmar com o instrutor
 
 ## Status
 
-- [x] Semana 1 — ambiente mínimo executando (`make sim`)
+- [x] Semana 1 — ambiente mínimo executando (`make sim` e `make lint`); falta clone limpo e tag `w01-env-v1.0`
 - [ ] Semana 2 — arquitetura e microarquitetura
 
 Backlog completo em [`docs/backlog.md`](docs/backlog.md).

@@ -17,7 +17,7 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído
 - [x] Relatório de estudo: AES (FIPS-197, revisão) e SPI (modos CPOL/CPHA)
 - [x] Backlog inicial (este arquivo)
 - [x] `make sim` compilando e passando com VCS (PASS no testbench do exemplo)
-- [ ] Rodar `make lint` e confirmar a ferramenta de lint com o instrutor
+- [x] Rodar `make lint` e confirmar a ferramenta de lint com o instrutor
 - [ ] Mover o conteúdo de `aes_spi/` para a raiz do repositório
 - [ ] Validar `make sim` em clone limpo (git clone em pasta nova + `source /Tools/synopsys-scripts/snps.sh` + `make sim`)
 - [ ] Commit, push e tag `w01-env-v1.0`

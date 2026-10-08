@@ -38,10 +38,8 @@ sim: $(SIM_OUT)
 # Usamos -compile para evitar que o linker (ld) seja chamado
 lint: $(SIM_OUT)
 	cd $(SIM_OUT) && \
-	vcs -full64 -sverilog -timescale=1ns/1ps \
-		-lint=all,noVCDE \
-		-elaborate \
-		$(EXAMPLE_RTL) -top counter \
+	vcs -full64 -sverilog +lint=all,noVCDE \
+		$(EXAMPLE_RTL) -top counter -o simv_lint \
 		| tee lint.log
 
 clean:

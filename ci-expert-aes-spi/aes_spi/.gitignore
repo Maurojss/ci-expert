@@ -1,0 +1,19 @@
+# Artefatos de build (simulação, síntese — reproduzíveis via make)
+build/
+
+# Bibliotecas/PDK (proprietário, específico de cada máquina/servidor)
+*lib*
+
+# Artefatos binários de ferramentas Synopsys
+*.ddc
+*.svf
+*.vpd
+*.fsdb
+csrc/
+simv
+simv.daidir/
+*.log
+
+# Editor/OS
+.vscode/
+.DS_Store

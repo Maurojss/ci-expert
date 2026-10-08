@@ -16,13 +16,18 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído
 - [x] Exemplo mínimo compilando/simulando (prova de fluxo, não é o IP real)
 - [x] Relatório de estudo: AES (FIPS-197, revisão) e SPI (modos CPOL/CPHA)
 - [x] Backlog inicial (este arquivo)
-- [ ] Validar `make sim` em clone limpo, numa máquina com VCS de verdade
-- [ ] Confirmar com o instrutor: ferramenta de lint a ser usada, PDK, especificação funcional detalhada
+- [x] `make sim` compilando e passando com VCS (PASS no testbench do exemplo)
+- [ ] Rodar `make lint` e confirmar a ferramenta de lint com o instrutor
+- [ ] Mover o conteúdo de `aes_spi/` para a raiz do repositório
+- [ ] Validar `make sim` em clone limpo (git clone em pasta nova + `source /Tools/synopsys-scripts/snps.sh` + `make sim`)
+- [ ] Commit, push e tag `w01-env-v1.0`
+- [ ] Confirmar com o instrutor: PDK e especificação funcional detalhada
+- [ ] Registrar no relatório da semana o diagrama top-level e as dúvidas de arquitetura
 
 ### Semana 2 — Arquitetura e microarquitetura
-- [ ] Diagrama de blocos (SPI, sincronização, banco de registradores, AES, controlador de energia)
+- [ ] Diagrama de blocos (RESET, PLL mockado, SPI, AES, memória/data system, banco de registradores se existir, controlador de energia)
 - [ ] Definir interfaces entre módulos (sinais, larguras, protocolo interno)
-- [ ] Estratégia de clock e reset, incluindo travessia SPI ↔ sistema
+- [ ] Estratégia de clock e reset, incluindo `locked` do PLL e travessia SPI ↔ sistema
 - [ ] Escolher microarquitetura do AES (iterativa por rodada vs. alternativa) e justificar
 - [ ] Definir interface do núcleo AES isoladamente (chave, dado, start, done, result)
 - [ ] Mapa de registradores (endereços, campos de controle/status/chave/dado)
@@ -141,4 +146,9 @@ Legenda: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído
 ## Backlog técnico contínuo (não datado, surge ao longo do projeto)
 
 - [ ] Issues reportadas pelo verificador parceiro (classificar: defeito de RTL / defeito do ambiente de verificação / ambiguidade de spec)
-- [ ] Ambiguidades de especificação a esclarecer com o instrutor
+- [ ] Ambiguidades de especificação a esclarecer com o instrutor:
+  - [ ] Chave e dado de entrada vêm pelo SPI ou pela memória?
+  - [ ] Existe banco de registradores entre o SPI e o AES, ou o SPI é a interface de controle direta?
+  - [ ] O PLL mockado é fornecido pelo instrutor ou precisa ser modelado?
+  - [ ] Qual é o protocolo da interface de memória (Memory Data IF)?
+  - [ ] Existe rubrica de avaliação com pontuação e pesos?

@@ -32,14 +32,14 @@ Alvos disponíveis:
 ```
 .
 ├── docs/
-│   ├── spec/            # especificação funcional (fornecida pelo instrutor)
-│   ├── architecture/     # arquitetura e arquitetura de energia
-│   └── reports/          # relatórios semanais (semana_XX.md)
-├── rtl/                  # código RTL
-├── tb/                   # testbenches
-├── formal/                # propriedades SVA e scripts de formal
-├── syn/                   # SDC, scripts e relatórios de síntese
-├── upf/                   # arquivos UPF e relatórios
+│   ├── spec/               # especificação funcional (fornecida pelo instrutor)
+│   ├── architecture/       # arquitetura e arquitetura de energia
+│   └── reports/            # relatórios semanais (semana_XX.md)
+├── rtl/                    # código RTL
+├── tb/                     # testbenches
+├── formal/                 # propriedades SVA e scripts de formal
+├── syn/                    # SDC, scripts e relatórios de síntese
+├── upf/                    # arquivos UPF e relatórios
 └── scripts/                # automação do fluxo
 ```
 
@@ -50,7 +50,7 @@ Alvos disponíveis:
 
 ## Status
 
-- [x] Semana 1 — ambiente mínimo executando (`make sim` e `make lint`); falta clone limpo e tag `w01-env-v1.0`
-- [ ] Semana 2 — arquitetura e microarquitetura
+- [x] Semana 1 — ambiente mínimo executando (`make sim` e `make lint`); tag `w01-setup-v1.0`
+- [~] Semana 2 — arquitetura e microarquitetura ([`docs/architecture/arquitetura_v1.0.md`](docs/architecture/arquitetura_v1.0.md))
 
 Backlog completo em [`docs/backlog.md`](docs/backlog.md).

@@ -77,18 +77,10 @@ Diferenças em relação ao fluxograma do documento do cronograma:
 4. O controlador de energia não aparece, o que é coerente com o cronograma, já que
    ele só entra na fase de baixo consumo.
 
-### Dúvidas de arquitetura (a levar ao instrutor)
+### Dúvidas de arquitetura
 
 - A chave e o dado de entrada vêm pelo SPI ou pela memória?
 - Existe banco de registradores entre o SPI e o AES, ou o SPI é a interface de controle direta?
 - O PLL mockado é fornecido pelo instrutor ou precisa ser modelado?
 - Qual é o protocolo da interface de memória (Memory Data IF)?
 - Existe rubrica de avaliação com pontuação e pesos?
-
-## Próximos passos
-
-- Semana 2: definir diagrama de blocos, estratégia de clock/reset e
-  microarquitetura do núcleo AES (iterativa por rodada vs. alternativas).
-- Confirmar com o instrutor: ferramenta de lint, PDK, especificação funcional
-  detalhada, modo SPI exato e as dúvidas de arquitetura acima.
-- Fechar a entrega: clone limpo, `make sim` com PASS e tag `w01-env-v1.0`.

@@ -1,21 +1,5 @@
 # Documento de Arquitetura v1.0 — AES Top-Level System
 
-**Semana 2 · versão 1.0 (para defesa)** · Projeto Hands-on, trilha RTL Design
-
-Este documento define a arquitetura e a microarquitetura do sistema de topo (RESET, PLL,
-SPI, banco de registradores, núcleo AES, MEMORY/DATA System e memória), a partir da
-arquitetura-base comum às trilhas de RTL e de verificação.
-
-Parte da especificação do sistema de topo e do RTL de referência da verificação ainda não
-está disponível. Cada ponto dependente delas virou uma **premissa numerada (A1–A10)** na
-seção 1. As premissas são o que a defesa e o alinhamento com o verificador parceiro devem
-confirmar ou corrigir.
-
-Documentos de apoio: [`mapa_de_registradores.md`](mapa_de_registradores.md) e
-[`interfaces_modelos.md`](interfaces_modelos.md) (modelos do PLL e da memória).
-
----
-
 ## 1. Escopo e premissas
 
 | # | Premissa adotada | Base | Se mudar, o que muda |

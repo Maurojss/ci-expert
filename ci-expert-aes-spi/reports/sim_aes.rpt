@@ -1,0 +1,12 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP2_Full64; Runtime version X-2025.06-SP2_Full64;  Oct 30 16:52 2026
+PASS: 832 checks de S-box, SubBytes e ShiftRows passaram
+$finish called from file "/home/mauro.sousa/ci-expert/ci-expert-aes-spi/tb/minisoc_aes/tb_minisoc_aes_sub_shift.sv", line 130.
+$finish at simulation time              1088000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1088000 ps
+CPU Time:      0.410 seconds;       Data structure size:   0.0Mb
+Fri Oct 30 16:52:12 2026

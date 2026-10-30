@@ -27,17 +27,17 @@ Legenda: `[ ]` a fazer · `[~]` em andamento (escrito, falta validar) · `[x]` c
 ## Fase 2 — Desenvolvimento do RTL (semanas 2–7)
 
 ### Semana 2 — Desafio: SubBytes e ShiftRows (entrega 30/10)
-- [~] `minisoc_aes_sbox`: 8 bits de entrada e de saída, combinacional (`rtl/minisoc_aes/`)
-- [~] `minisoc_aes_sub_bytes`: estado de 128 bits com 16 instâncias da S-box
-- [~] `minisoc_aes_shift_rows`: estado de 128 bits, só reordenação de fios
-- [~] Convenção do estado: byte 0 em `[127:120]`, byte 15 em `[7:0]`
-- [~] Testbench autoverificável (`tb/minisoc_aes/`): S-box nas 256 entradas e Apêndice B (rodadas 1 a 10)
-- [~] Opcional: InvSubBytes e InvShiftRows, testadas como inversas
-- [ ] Rodar `make regress` no VCS (`sim_aes` com PASS e `lint_aes` sem erros)
-- [ ] Versionar `reports/sim_aes.rpt` e `reports/lint_aes.rpt`
-- [ ] Ler as seções 1 a 3 e 8 do Block Guide e registrar as dúvidas em `docs/reports/semana_02.md`
-- [ ] Preencher a tabela de resultados do VCS no relatório
-- [ ] Tag `w02-sbox-shiftrows-v1.0`
+- [x] `minisoc_aes_sbox`: 8 bits de entrada e de saída, combinacional (`rtl/minisoc_aes/`)
+- [x] `minisoc_aes_sub_bytes`: estado de 128 bits com 16 instâncias da S-box
+- [x] `minisoc_aes_shift_rows`: estado de 128 bits, só reordenação de fios
+- [x] Convenção do estado: byte 0 em `[127:120]`, byte 15 em `[7:0]`
+- [x] Testbench autoverificável (`tb/minisoc_aes/`): S-box nas 256 entradas e Apêndice B (rodadas 1 a 10)
+- [x] Opcional: InvSubBytes e InvShiftRows, testadas como inversas
+- [x] Rodar `make regress` no VCS (`sim_aes` com PASS e `lint_aes` sem erros)
+- [x] Versionar `reports/sim_aes.rpt` e `reports/lint_aes.rpt`
+- [x] Ler as seções 1 a 3 e 8 do Block Guide e registrar as dúvidas em `docs/reports/semana_02.md`
+- [x] Preencher a tabela de resultados do VCS no relatório
+- [x] Tag `w02-sbox-shiftrows-v1.0`
 
 Nota: a tag `w02-arch-v1.0` pertence ao cronograma anterior (documentos de arquitetura, agora
 rascunho). Não reutilizar.

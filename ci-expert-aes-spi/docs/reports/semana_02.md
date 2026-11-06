@@ -90,13 +90,19 @@ Para não depender de digitação, o script confere os dados em três etapas e a
 
 ### Fluxo oficial (VCS)
 
-Preencher depois de rodar `make regress` no servidor:
+### Fluxo oficial (VCS)
 
-| Item | Resultado |
-| --- | --- |
-| `make sim_aes` | A preencher (esperado: `PASS: 832 checks ...`) |
-| `make lint_aes` | A preencher (esperado: sem erros; avisos justificados) |
-| Logs versionados | `reports/sim_aes.rpt` e `reports/lint_aes.rpt` |
+Execução realizada no servidor com o comando `make regress`:
+
+| Alvo | Comando | Checks | Erros | Tempo (s) | Status |
+| --- | --- | --- | --- | --- | --- |
+| `sim_aes` | VCS X-2025.06-SP2 (`-sverilog -timescale=1ns/1ps -kdb`) | 832 | 0 | 0.390 | PASS |
+| `lint_aes` (`minisoc_aes_sub_bytes`) | VCS `+lint=all,noVCDE` | N/A | 0 | 0.699 | PASS (sem latches) |
+| `lint_aes` (`minisoc_aes_shift_rows`) | VCS `+lint=all,noVCDE` | N/A | 0 | 0.629 | PASS (sem latches) |
+| `lint_aes` (`minisoc_aes_inv_sub_bytes`) | VCS `+lint=all,noVCDE` | N/A | 0 | 0.675 | PASS (sem latches) |
+| `lint_aes` (`minisoc_aes_inv_shift_rows`) | VCS `+lint=all,noVCDE` | N/A | 0 | 0.633 | PASS (sem latches) |
+
+Logs arquivados em `reports/sim_aes.rpt` e `reports/lint_aes.rpt`.
 
 ## Decisões e observações
 

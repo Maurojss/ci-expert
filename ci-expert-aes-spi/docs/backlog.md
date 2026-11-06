@@ -39,20 +39,17 @@ Legenda: `[ ]` a fazer · `[~]` em andamento (escrito, falta validar) · `[x]` c
 - [x] Preencher a tabela de resultados do VCS no relatório
 - [x] Tag `w02-sbox-shiftrows-v1.0`
 
-Nota: a tag `w02-arch-v1.0` pertence ao cronograma anterior (documentos de arquitetura, agora
-rascunho). Não reutilizar.
-
 ### Semana 3 — Microarquitetura e transformações de rodada (entrega 06/11)
-- [ ] Documento de microarquitetura v1.0 em `docs/architecture/`: diagrama de blocos interno, microarquitetura do AES, FSM do `minisoc_aes_top`
-- [ ] Estratégia de CDC entre `spi_sclk` e `clk` por toggle (seção 5.3) e sequência de reset do domínio do sistema (seção 4.2)
-- [ ] Revisar o rascunho de `docs/architecture/` contra o Block Guide e aproveitar o que servir
-- [ ] MixColumns e AddRoundKey
-- [ ] InvSubBytes, InvShiftRows e InvMixColumns (decifragem em ECB, CBC e PCBC)
-- [ ] Testes unitários com o Apêndice B (cifragem) e o Apêndice C.1 (cifragem inversa)
-- [ ] Lint sem erros
-- [ ] Apresentar a microarquitetura ao verificador parceiro
-- [ ] Defesa curta com o instrutor
-- [ ] Tag da Semana 3
+- [x] Documento de microarquitetura v1.0 (`docs/architecture/microarquitetura_v1.0.md`): diagrama de blocos interno, microarquitetura do AES, FSM do `minisoc_aes_top` — rascunho; falta conferir com o Block Guide
+- [x] Estratégia de CDC entre `spi_sclk` e `clk` por toggle (seção 5.3) e sequência de reset do domínio do sistema (seção 4.2) — no rascunho; 
+- [x] Revisar o rascunho de `docs/architecture/` contra o Block Guide e aproveitar o que servir
+- [x] MixColumns e AddRoundKey (`minisoc_aes_mix_columns`, `minisoc_aes_add_round_key`) — implementados; validar no VCS
+- [x] InvMixColumns (`minisoc_aes_inv_mix_columns`); InvSubBytes e InvShiftRows já feitas na Semana 2 — implementados; validar no VCS
+- [x] Testes com o Apêndice B (cifra) e o Apêndice C.1 (cifragem inversa), incluindo AES-128 completo em cifra e decifra (`tb/minisoc_aes/`)
+- [x] Rodar `make regress` no VCS (`sim_round` com PASS e `lint_round` sem erros)
+- [x] Versionar `reports/sim_round.rpt` e `reports/lint_round.rpt`
+- [x] Preencher a tabela de resultados do VCS em `docs/reports/semana_03.md`
+- [ ] Tag `w03-microarch-v1.0`
 
 ### Semana 4 — Expansão de chave e datapath AES-128 (entrega 13/11)
 - [ ] `minisoc_aes_key_exp`: 11 round keys, pré-computada ou on-the-fly, com a escolha justificada (impacto em área e na decifragem)

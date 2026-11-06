@@ -27,7 +27,9 @@ Alvos disponíveis:
 | `make lint` | Roda o lint do VCS (`+lint=all`) no exemplo mínimo |
 | `make sim_aes` | Testbench de S-box, SubBytes e ShiftRows contra os vetores do FIPS-197 (VCS) |
 | `make lint_aes` | Lint (`+lint=all`) de cada transformação do AES (VCS) |
-| `make regress` | Roda `sim`, `lint`, `sim_aes` e `lint_aes` |
+| `make sim_round` | Testbench de MixColumns, AddRoundKey e AES-128 completo (cifra e decifra do FIPS-197) (VCS) |
+| `make lint_round` | Lint (`+lint=all`) dos módulos da Semana 3 (VCS) |
+| `make regress` | Roda `sim`, `lint`, `sim_aes`, `lint_aes`, `sim_round` e `lint_round` |
 | `make clean` | Remove os artefatos gerados (`build/`) |
 | `make help` | Lista os alvos |
 
@@ -61,6 +63,7 @@ Alvos disponíveis:
 ## Status
 
 - [x] Semana 1 — ambiente mínimo executando (`make sim` e `make lint`); tag `w01-setup-v1.0`
-- [~] Semana 2 — desafio S-box, SubBytes e ShiftRows (`make sim_aes` e `make lint_aes`)
+- [x] Semana 2 — desafio S-box, SubBytes e ShiftRows (`make sim_aes` e `make lint_aes`); tag `w02-sbox-shiftrows-v1.0`
+- [~] Semana 3 — microarquitetura, MixColumns, AddRoundKey e transformações inversas (`make sim_round` e `make lint_round`)
 
 Backlog completo em [`docs/backlog.md`](docs/backlog.md).

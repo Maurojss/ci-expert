@@ -127,14 +127,6 @@ O detalhe está em `docs/architecture/microarquitetura_v1.0.md`.
 - [ ] Enviar o documento de microarquitetura (depois de conferido com o Block Guide).
 - [ ] Alinhar as dúvidas e ambiguidades do Block Guide e registrá-las como *issues*.
 
-## Roteiro da defesa (5 a 8 minutos)
-
-1. **Contexto (1 min):** os quatro blocos do `minisoc_top` e os quatro domínios de clock.
-2. **AES (2 min):** iterativo de 128 bits, a rodada reaproveitada nos dois sentidos e a escolha da cifra inversa direta.
-3. **FSM (2 min):** os estados do `minisoc_aes_top` e o tratamento dos modos, com o caso do CBC em decifra *in-place*.
-4. **CDC e reset (2 min):** toggle e hold, código Gray no BLOCKS_DONE e a sequência de reset.
-5. **Verificação (1 min):** o AES-128 completo cifrando o Apêndice B e decifrando o C.1.
-
 ## Próximos passos
 
 - Fechar a Semana 3: rodar `make regress` no VCS, preencher os resultados, versionar os `.rpt`, ler o Block Guide

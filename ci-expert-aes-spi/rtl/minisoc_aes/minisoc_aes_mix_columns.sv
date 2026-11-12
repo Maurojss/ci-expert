@@ -1,5 +1,5 @@
 // minisoc_aes_mix_columns.sv
-// MixColumns() do AES (FIPS-197, secao 5.1.3): cada coluna do estado e multiplicada, em
+// MixColumns() do AES: cada coluna do estado e multiplicada, em
 // GF(2^8), pela matriz fixa (02 03 01 01 / 01 02 03 01 / 01 01 02 03 / 03 01 01 02).
 // Combinacional. A coluna c reune os bytes 4c a 4c+3 (s0c a s3c).
 // Convencao do estado: byte 0 em state[127:120], byte 15 em state[7:0].

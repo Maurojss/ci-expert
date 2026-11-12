@@ -1,5 +1,5 @@
 // minisoc_aes_sub_bytes.sv
-// SubBytes() do AES (FIPS-197, secao 5.1.1): aplica a S-box a cada um dos 16 bytes do estado.
+// SubBytes() do AES: aplica a S-box a cada um dos 16 bytes do estado.
 // Combinacional.
 //
 // Convencao do estado (a mesma do Block Guide): o byte 0 fica em state[127:120] e o byte 15

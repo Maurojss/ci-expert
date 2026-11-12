@@ -1,6 +1,6 @@
 // minisoc_aes_inv_sbox.sv
 // S-box inversa do AES (InvSubBytes): substituicao de um byte.
-// Combinacional. Gerado por scripts/gen_aes_vectors.py a partir do FIPS-197 (Figura 14) e
+// Combinacional. Gerado por scripts/gen_aes_vectors.py a partir do FIPS-197 e
 // conferido contra o calculo direto em GF(2^8).
 
 module minisoc_aes_inv_sbox (

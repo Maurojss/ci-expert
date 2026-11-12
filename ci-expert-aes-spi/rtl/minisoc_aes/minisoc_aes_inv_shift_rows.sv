@@ -1,5 +1,5 @@
 // minisoc_aes_inv_shift_rows.sv
-// InvShiftRows() do AES (FIPS-197, secao 5.3.1): a linha r do estado e deslocada ciclicamente
+// InvShiftRows() do AES: a linha r do estado e deslocada ciclicamente
 // de r posicoes para a direita. Apenas reordenacao de fios. Opcional na Semana 2.
 // Pela equacao (5.8): s'[r, (c + r) mod 4] = s[r, c].
 

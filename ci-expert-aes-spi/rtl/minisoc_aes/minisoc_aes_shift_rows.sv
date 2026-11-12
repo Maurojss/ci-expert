@@ -1,5 +1,5 @@
 // minisoc_aes_shift_rows.sv
-// ShiftRows() do AES (FIPS-197, secao 5.1.2): a linha r do estado e deslocada ciclicamente
+// ShiftRows() do AES: a linha r do estado e deslocada ciclicamente
 // de r posicoes para a esquerda. Apenas reordenacao de fios, sem logica.
 //
 // Convencao do estado: o byte n (n = r + 4c) fica em state[127-8n -: 8]; o byte 0 esta em

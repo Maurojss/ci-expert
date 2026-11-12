@@ -1,5 +1,5 @@
 // minisoc_aes_inv_mix_columns.sv
-// InvMixColumns() do AES (FIPS-197, secao 5.3.3): inverso do MixColumns. Cada coluna e
+// InvMixColumns() do AES: inverso do MixColumns. Cada coluna e
 // multiplicada, em GF(2^8), por (0e 0b 0d 09 / 09 0e 0b 0d / 0d 09 0e 0b / 0b 0d 09 0e).
 // Combinacional. Usado na decifragem (ECB, CBC e PCBC).
 // As constantes sao obtidas por encadeamento de xtime:

@@ -52,10 +52,10 @@ Legenda: `[ ]` a fazer · `[~]` em andamento (escrito, falta validar) · `[x]` c
 - [ ] Tag `w03-microarch-v1.0`
 
 ### Semana 4 — Expansão de chave e datapath AES-128 (entrega 13/11)
-- [ ] `minisoc_aes_key_exp`: 11 round keys, pré-computada ou on-the-fly, com a escolha justificada (impacto em área e na decifragem)
-- [ ] `minisoc_aes_dp`: cifra e cifra inversa de um bloco, com interface de controle (por exemplo, start/done)
-- [ ] Testbench nos dois sentidos com os vetores do Apêndice B e do Apêndice C.1
-- [ ] Lint sem erros
+- [x] `minisoc_aes_key_exp`: 11 round keys, pré-computada ou on-the-fly, com a escolha justificada (impacto em área e na decifragem)
+- [x] `minisoc_aes_dp`: cifra e cifra inversa de um bloco, com interface de controle (por exemplo, start/done)
+- [x] Testbench nos dois sentidos com os vetores do Apêndice B e do Apêndice C.1
+- [x] Lint sem erros
 
 ### Semana 5 — SPI front-end e PLL mock (entrega 20/11)
 - [ ] `minisoc_spi` (seção 5): modo 0, MSB primeiro, frame de 40 bits; leitura em duas transações com NOP `0x3F`

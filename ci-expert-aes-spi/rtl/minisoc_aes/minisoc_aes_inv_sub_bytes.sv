@@ -1,5 +1,5 @@
 // minisoc_aes_inv_sub_bytes.sv
-// InvSubBytes() do AES (FIPS-197, secao 5.3.2): aplica a S-box inversa a cada byte do estado.
+// InvSubBytes() do AES: aplica a S-box inversa a cada byte do estado.
 // Combinacional. Opcional na Semana 2; necessario na decifragem (Semana 3 em diante).
 // Mesma convencao de bytes de minisoc_aes_sub_bytes.
 
